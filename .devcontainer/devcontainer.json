@@ -24,7 +24,7 @@
 	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo service postgresql start && sudo service redis-server start && bundle install --path=vendor/bundle",
+	"postCreateCommand": ".devcontainer/boot.sh",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
